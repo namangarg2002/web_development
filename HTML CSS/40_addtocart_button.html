@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add To Cart Button</title>
+    <style type="text/css">
+        .box{
+            width: 400px;
+            height: 400px;
+            border: 2px solid gray;
+            margin: auto;
+            margin: 100px;
+            position: relative;
+
+        }
+        .add{
+            width: 100%;
+            font-size: 30px;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            position: absolute;
+            left: 0px;
+            bottom: -40px;
+            opacity: 0;
+            transition: 1.5s;   
+        }
+        .box:hover .add{
+            bottom: 0px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="40.1img.avif" height="100%" width="100%">
+        <input type="button" name="button" value="Add To Cart" class="add">
+    </div>
+</body>
+</html>

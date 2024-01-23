@@ -1,0 +1,89 @@
+    <!-- Forms   : <form>  </form>   :   An Html form is used to collect user input. The user input can then be sent to server for processing.
+            Attributes :  Text Input Controls   - used to,take small text as input
+                          Checkboxes Controls.  - 
+                          Radio Box Controls.   - used to select only one item among 2-3
+                          Select Box Controls.
+                          File Select Boxes.
+                          Hidden Controls.
+                          Clickable Buttons.
+                          Submit and Reset Button. - used to submit and reset button  -->
+
+            <!-- <input/>    - used to element name
+                    atrribute    :  type
+                                    value
+                                    placeholder -->
+
+            <!-- select box   :   <select>  </select>     -  used to create select box(dropdown)
+                                            <optgroup>   </optgroup>
+                                            <option>   </option>    -->
+
+            <!-- input Type File      :    used to get any documnet form user like file,imagage pdf -->
+
+            <!-- Feilsset tag        :  <fieldset>   </fieldset>  used to make feild(border) of the form  -->
+
+            <!-- legend tag   :  <legend>   </legend>    -->
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+        <!-- <h2> Enquiry </h2> -->
+        <form>
+            <fieldset>
+                <legend> Enquiry </legend>
+            Name: <input type="text" name="name" value="" placeholder="Enter your name here.."/>
+            <br/>
+            <br/>
+            Address : <textarea name="Address"> </textarea>
+            <br/>
+            <br/>
+            Gender : 
+            <input type="radio" value="m" name="gender"/> Male
+            <input type="radio" value="f" name="gender"/> Female
+            <input type="radio" value="o" name="gender"/> Other
+            <br/>
+            <br/>
+            Country:
+            <select>
+                <option> Please select a country</option>
+                <optgroup label="ASIA">
+                    <option value="india">India</option>
+                    <option value="sri lanka">Sri Lanka</option>
+                    <option value="china">China</option>
+                    <option value="myanmar">Myanmar</option>
+                </optgroup>
+
+                <optgroup label="AMERICA">
+                    <option value="usa">USA</option>
+                    <option value="brazil">Brazil</option>
+                </optgroup>
+                <!-- <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="brazil">Brazil</option>
+                <option value="uae">UAE</option>
+                <option value="russia">Russia</option> -->
+            </select>
+            <br/>
+            <br/>
+            Hobbies:
+            <input type="checkbox" name="hobbies">Dancing
+            <input type="checkbox" name="hobbies">Playing
+            <input type="checkbox" name="hobbies">Singing
+            <br/>
+            <br/>
+            Image:
+            <input type="file" name="img"/>
+            <br/>
+            <br/>
+            <input type="submit" value="Send"/>
+            <input type="reset" value="Reset"/>
+
+            </fieldset>
+        </form>
+</body>
+</html>

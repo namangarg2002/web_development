@@ -1,0 +1,64 @@
+        <!-- Table tag   : <table>  </table>  - used to show some data which are related to each other 
+                    attributes  :  <thead>  </thead>  - used to define header of the table 
+                                   <tbody>  </tbody>  - used to define the body of the table 
+                                   <tr>  </tr>        - used to define a new row of the table 
+                                   <th>  </th>        - used to show the heading of each column inside the table row(<tr>)
+                                   <td>  </td>        - used to show the datainside the table row (<tr>)                                     -->
+
+        <!-- <Table>  </Table>
+                                    attributes  :  bgcolor          -- Baground color
+                                                   align            -- direction
+                                                   border           -- making border of entities
+                                                   cellspacing      -- space between cells cells(px or %)
+                                                   cellpadding      -- space between border and text in the call
+                                                   width
+                                                   height -->
+
+        <!-- <tr>  </tr>
+                        <attributes  :  bgcolor 
+                                        align  -->
+
+        <!-- <td> </td>  or  <th>  </th>
+
+                    atrributes  :  bgcolor
+                                   rowspan     -- used to merge two rows 
+                                   colspan     -- used to merge two rcolumn  -->
+
+
+ 
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table_Childern Tag</title>
+</head>
+<body>
+        <table border="5px" align="center" bgcolor="gray" cellpadding="10" cellspacing="5" width="500px" height="200px">
+            <thead>
+                <tr bgcolor="silver">
+                    <th> Courses </th>
+                    <th> Fees </th>
+                    <th> Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td bgcolor="Aqua"> Web Development</td>
+                    <td> 100000</td>
+                    <td> 5 Months </td>
+                </tr>
+                <tr colspan="5">
+                    <td> Cyber Security </td>
+                    <td> 50000</td>
+                    <td> 4 Months</td>
+                </tr>
+                <tr>
+                    <td> Data Analysis</td>
+                    <td> 40000</td>
+                    <td> 3 Months </td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation3</title>
+    <style type="text/css">
+        .box-container{
+            width: 700px;
+            height: 150px;
+            border: 2px solid black;
+            margin: 50px auto;
+            position: relative;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            background: red;
+            margin-top: 20px;
+            animation: box 4s;
+            position: absolute;
+            animation-timing-function: ease;  
+        }
+        @keyframes box{
+            from{
+                left: 0px;
+            }
+            to{
+                left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
